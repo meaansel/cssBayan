@@ -82,6 +82,7 @@ a:hover ion-icon {
 }
 
 .accordion-content {
+  display: block;
   max-height: 0;
   opacity: 0;
   overflow: hidden;

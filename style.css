@@ -61,7 +61,8 @@ a:active {
 a:link ion-icon {
   transition: all 0.3s;
 }
-a:hover ion-icon {
+a:hover ion-icon,
+a:active ion-icon {
   transform: rotate(0.5turn);
 }
 

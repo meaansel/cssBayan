@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  line-height: 1;
+}
+
+.accordion {
+  width: 44rem;
+  margin: 6rem auto;
+}
+
+.name {
+  color: #0d830d;
+  margin-bottom: 1.2rem;
+  margin-left: 5rem;
+  letter-spacing: 0.094rem;
+  text-shadow: 0.125rem 0.125rem #d81919, 0.25rem 0.25rem #ecf41f,
+    0.375rem 0.375rem #379bf9;
+}
+
+/* ACCORDION TITLE */
+
+.accordion-title {
+  padding: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.094rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+a:link,
+a:visited {
+  color: #343a40;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.accordion ion-icon {
+  display: none;
+}
+
+.accordion:hover ion-icon {
+  display: inline-block;
+}
+
+.accordion:hover a {
+  color: #379bf9;
+}
+
+a:link ion-icon {
+  transition: all 0.3s;
+}
+a:hover ion-icon,
+a:active ion-icon {
+  transform: rotate(0.5turn);
+}
+
+.accordion ul {
+  list-style: none;
+}
+
+.accordion li {
+  border-bottom: #77818a52 0.094rem solid;
+}
+
+/* ACCORDION CONTENT */
+
+.meme {
+  width: 25rem;
+  margin-left: 10rem;
+  margin-bottom: 1rem;
+}
+
+.accordion-content {
+  display: block;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+
+  cursor: pointer;
+}
+
+li:hover .accordion-content {
+  max-height: 100vh;
+  opacity: 100%;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked ~ .accordion-content {
+  max-height: 100vh;
+  opacity: 100%;
+}

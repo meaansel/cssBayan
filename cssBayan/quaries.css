@@ -1,0 +1,46 @@
+@media (max-width: 120rem) {
+  .accordion-title {
+    font-size: 1rem;
+  }
+  .name {
+    font-size: 2rem;
+  }
+}
+
+/* tablet */
+@media (max-width: 52rem) {
+  .name {
+    font-size: 2.5rem;
+  }
+  .accordion-title {
+    font-size: 1.3rem;
+  }
+  .accordion:hover a {
+    color: #343a40;
+  }
+}
+
+/* mobile */
+
+@media (max-width: 20rem) {
+  .accordion:hover a {
+    color: #343a40;
+  }
+  .meme {
+    width: 40vh;
+    margin-left: 3rem;
+  }
+
+  .name {
+    margin-left: 2rem;
+    font-size: 1.3rem;
+  }
+
+  .accordion-title {
+    font-size: 0.7rem;
+  }
+
+  .accordion {
+    width: 18rem;
+  }
+}
